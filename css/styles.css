@@ -113,7 +113,7 @@ body {
 .rt-aln {
 	position: absolute;
     top: 130%;
-    right: 46.5%;
+    right: 43.5%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
@@ -155,7 +155,7 @@ a {
 }
 
 footer {
-    background-color: #233237;
+    background-color: #142141;
     position: sticky;
     z-index: 1;
 }
