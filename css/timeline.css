@@ -10,6 +10,7 @@
 	position: relative;
 	max-width: 1200px;
 	margin: 0 auto;
+	z-index: 0;
 }
 
 /* The actual timeline (the vertical LINE) */
@@ -19,11 +20,11 @@
 	width: 26px;
 	background-color: #2F3132;
 	
-	background: -moz-linear-gradient(top, #2F3132 0%, #036197 50%); /* FF3.6-15 */
+	background: -moz-linear-gradient(top, #2F3132 0%, #036197 100px); /* FF3.6-15 */
 
-	background: -webkit-linear-gradient(top, #2F3132 0%, #036197 50%); /* Chrome10-25,Safari5.1-6 */
+	background: -webkit-linear-gradient(top, #2F3132 0%, #036197 100px); /* Chrome10-25,Safari5.1-6 */
 
-	background: linear-gradient(to bottom, #2F3132 0%, #036197 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: linear-gradient(to bottom, #2F3132 0%, #036197 100px); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2F3132', endColorstr='#036197', GradientType=0 ); /* IE6-9 */
 	
@@ -40,6 +41,7 @@
 	position: relative;
 	background-color: inherit;
 	width: 50%;
+	z-index: 10;
 }
 
 /* The circles on the timeline */
@@ -53,7 +55,7 @@
 	/*border: 4px solid #DC3545;*/
 	top: 25px; 		/* adjusts circle's height */
 	border-radius: 50%;
-	z-index: 1;
+	z-index: 10;
 }
 
 /* Fix the circle for containers on the right side */
@@ -128,6 +130,14 @@
 	box-shadow: -2px 4px 2px 2px silver;
 }
 
+.content-spacer {
+	padding: 20px 30px;
+	background-color: #fff;
+	position: relative;
+	border-radius: 6px;
+	color: white;
+}
+
 .bg-fill {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#036197+0,2989d8+50,207cca+51,7db9e8+100 */
 
@@ -156,29 +166,22 @@
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media all and (max-width: 600px) {
-/* Place the timelime to the left */
-  .timeline::after {
-    left: 31px;
-  }
 
 /* Full-width containers */
   .timeline-container {
     width: 100%;
-    padding-left: 70px;
+    padding-left: 25px;
     padding-right: 25px;
   }
+	
+	.content-left {
+		text-align: left;
+	}
 
 /* Make sure that all arrows are pointing leftwards */
   .timeline-container::before {
     left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-
-/* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-    left: 17px;
+	  z-index: 0;
   }
 
 /* Make all right containers behave like the left ones */
