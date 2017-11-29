@@ -225,7 +225,7 @@ footer > ul li .text {
     color: #848889;
     font-size: 13px;
     line-height: 20px;
-    margin-left: 105px;
+    margin-left: 10px;
     position: sticky;
     text-align: justify;
 }
@@ -251,7 +251,7 @@ footer .bar-wrap {
     font-size: 12px;
     margin: 0 auto;
     max-width: 1200px;
-    position: sticky;
+    position: relative;
     width: 95%;
 }
 .links {
@@ -270,9 +270,10 @@ footer .bar-wrap {
     color: #FFFFFF;
 }
 .social {
-    position: absolute;
+    position: inherit;
     right: 0;
     top: 0;
+	text-align: center;
 }
 .social a {
     color: #778888;
@@ -311,7 +312,7 @@ footer .bar-wrap {
     display: block;
 }
 .copyright {
-    margin-top: 20px;
+    margin-top: 0px;
 	text-align: center;
 }
 
