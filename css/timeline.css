@@ -64,6 +64,8 @@
 }
 
 .bracket {
+	font-family: Lato, sans-serif;
+	font-weight: 700;
 	transform: rotate(-90deg); 
 	text-align: center; 
 	font-size: 1500%;
