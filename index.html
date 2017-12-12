@@ -2,26 +2,29 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/timeline.css">
+	<link rel="stylesheet" href="css/portfolio.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-	<title>Kevin GILLISPIE | Software Developer</title>
+	<title>Kevin GILLISPIE | Web Developer</title>
 	
 	
 </head>
 
 <body>
 
-   <!-- navbar -->
+   <!-------------
+		NAVBAR
+	-------------->
    
-	<nav class="navbar navbar-toggleable-md fixed-top navbar-inverse bg-navbar-color">
+	<nav class="navbar navbar-expand-lg fixed-top bg-navbar-color">
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<a class="navbar-brand" href="#"><img src="img/power-g-dot.png" class="logo-g-dot" alt="logo"></a>
 		<div class="collapse navbar-collapse" id="navbarCollapse">
-		<ul class="navbar-nav mr-auto">
+		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 			<li class="nav-item active">
 				<a class="nav-link" href="#home"><i class="fa fa-home" aria-hidden="true"></i>Abode <span class="sr-only">(current)</span></a>
 			</li>
@@ -36,42 +39,77 @@
 		</div>
 	</nav>
     
-	<!-- /navbar -->
+	<!--------------
+		END NAVBAR 
+	---------------->
   
-      <!-- Main jumbotron for a primary marketing message or call to action -->
+	<!--------------
+		JUMBOTRON
+	---------------->
 	<div class="jumbotron code-pic" id="home">
 	
 		<div class="container">
-		
-
-			<div>
-				
-				<h1 class="display-3 name">Kevin GILLISPIE</h1>
-				<p class="sub-name">WEB & SOFTWARE DEVELOPER<br />Read more by clicking the button below. </p>
-				<p><a href="https://wp.me/p97dDs-f" tabindex="0" class="btn btn-lg btn-danger rt-aln popover-dismiss" role="button" data-toggle="popover" data-trigger="hover" data-placement="bottom" title="Personal Introduction" data-content="Click the button, and you will be taken a brief intoduction (and podcast) on Wordpress.">My Intro on &nbsp;<i class="fa fa-wordpress" aria-hidden="true"></i></a></p>
-			</div>
+			<h1 class="display-3 name">Kevin GILLISPIE</h1>
+			<p class="sub-name">WEB & SOFTWARE DEVELOPER<br />Read more by clicking the button below. </p>
+			<p><a href="https://wp.me/p97dDs-f" tabindex="0" class="btn btn-lg btn-danger bg-pale-red rt-aln popover-dismiss" role="button" data-toggle="popover" data-trigger="hover" data-placement="bottom" title="Personal Introduction" data-content="Click the button, and you will be taken to a brief intoduction (and podcast) on Wordpress.">My Intro on &nbsp;<i class="fa fa-wordpress" aria-hidden="true"></i></a></p>
 		</div>
 	</div>
 
-	<!-- TIMELINE -->
+	<!---------------
+		PORTFOLIO 
+	----------------->
+	<div class="jumbotron-fluid bg-pale-blue bg-pale-blue-gradient gap">
+		<div class="container">
+			<div>
+				<h1 class="display-4 pf-heading">Portfolio</h1>
+				<h1 class="bracket-portfolio">{</h1>
+			</div>
+			<div class="row justify-content-center" style="margin: -80px 0px 80px;">
+				<div class="col-lg-5 col-sm-6 col-xs-12 card pad-10">
+					<img src="img/your-logo-psd.png" class="card-img-top img-z" alt="Photoshop to HTML">
+					<div class="card-body text-right">
+						<h4 class="card-title">PSD to HTML</h4>
+						<h6 class="card-subtitle mb-2 text-muted">Web Design</h6>
+						<p class="card-text">This is an example of transforming a Photoshop document into a working webpage.</p>
+					</div>
+				</div>
+				<div class="col-lg-5 col-sm-6 col-xs-12 card pad-10">
+					<img src="img/your-logo-psd.png" class="card-img-top img-z" alt="Photoshop to HTML">
+					<div class="card-body text-left">
+						<h4 class="card-title">PSD to HTML</h4>
+						<h6 class="card-subtitle mb-2 text-muted">Web Design</h6>
+						<p class="card-text">This is an example of transforming a Photoshop document into a working webpage.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!---------------
+		TIMELINE 
+	----------------->
 	<div class="container">
 		<div>
-			<h1 class="display-4 jt-heading">Lifeline</h1>
-			<h1 class="bracket">{</h1>
+			<h1 class="display-4 tl-heading">Lifeline</h1>
+			<h1 class="bracket-lifeline">{</h1>
 		</div>
 
 		<div class="timeline">
 			<div class="timeline-container left">
 				<div class="content-left bg-fill">
 					<h2><span class="month">NOV</span> 2017</h2>
-					<p class="description">Graduated from The Tech Academy.</p>
-					<p class="description">An exciting moment wherein my vocational life pivoted unto broad horizons.</p>
+					<p class="moment-title">Graduated from The Tech Academy.</p>
+					<p class="description">An exciting moment whereupon my vocational life pivoted towards a more-potentiated future.</p>
+					<img src="img/the-tech-academy-building-400.jpg" class="img-thumbnail img-responsive" alt="The Tech Academy" />
 				</div>
 			</div>
 			<div class="timeline-container right">
 				<div class="content-right bg-fill">
 					<h2><span class="month">NOV</span> 2016</h2>
-					<p class="description">Just married! <i class="fa fa-heart" aria-hidden="true"></i></p>
+					<p class="moment-title"><i class="fa fa-heart" aria-hidden="true"></i> Just married!</p>
+					<p class="description">Of all my adventures, the best has only just begun.</p>
+					<img src="img/wedding-silhouette-400.jpg" class="img-thumbnail img-responsive" alt="Silhouette of couple" />
 				</div>
 			</div>
 			<div id="timeline-end">
@@ -85,18 +123,26 @@
 	
 </body>   
 	
-   <!-- footer -->
+   <!-------------
+		FOOTER 
+	-------------->
 
 	<footer class="clearfix">
         <div class="splitter"></div>
         <ul>
+			<!-----------------
+				ABOUT EXERPT
+			------------------->
             <li>
-                
                 <div class="text">
                     <h4><i class="fa fa-address-book" aria-hidden="true"></i> About</h4>
                     <div>I see code and coding as the connective tissue between what is imagined and what is possible, between vision and veracity. While one hemisphere is aesthetically dominant, and the other, logically; the corpus callosum allows these two seemingly disparate realms to affect and amplify each other. <a href="#">Read more</a></div>
                 </div>
             </li>
+			
+			<!-----------------
+				BLOG EXERPT
+			------------------->
             <li>
                 
                 <div class="text">
@@ -104,8 +150,11 @@
                     <div>Coding is difficult. And the longer one pursues it, the more difficult the concepts become. Like exploration, software development is not for the faint of heart. It will attack the very foundations of your self-confidence when you least expect it. But it is that pugilistic bent that makes coding so rewarding. <a href="https://medium.com/@codercallosum/">Read more</a></div>
                 </div>
             </li>
-            <li>
-                
+            
+			<!-----------------
+				GITHUB EXERPT
+			------------------->
+			<li>
                 <div class="text">
                     <h4><i class="fa fa-github" aria-hidden="true"></i> GitHub</h4>
                     <div>These are the repositories containing the work I completed while attending The Tech Academy as well as the code for this very website. <a href="https://github.com/kevingillispie">Read more</a>
@@ -114,6 +163,9 @@
             </li>
         </ul>
 
+		<!-----------------
+			COPYRIGHT
+		------------------->
         <div class="bar">
             <div class="bar-wrap">
                 
@@ -123,7 +175,9 @@
         </div>
     </footer>
     
-<!-- /footer -->
+	<!---------------
+		END FOOTER 
+	----------------->
    
    
     <!-- Bootstrap core JavaScript

@@ -2,8 +2,9 @@
 	Fixed header styles
 ===================================================*/
 body {
-  min-height: 75rem;
-  padding-top: 3.5rem;
+	min-height: 75rem;
+	padding-top: 3.5rem;
+	margin: 0px;
 } 
 
 .bg-navbar-color {
@@ -112,9 +113,9 @@ body {
 
 .rt-aln {
 	position: absolute;
-    top: 130%;
+    top: 69%;
     right: 43.5%;
-    margin-right: -50%;
+    margin-right: -39.5%;
     transform: translate(-50%, -50%)
 }
 
@@ -123,9 +124,6 @@ body {
 	Global styles
 ===================================================*/
 
-.jt-heading {
-	text-align: center;
-}
 
 .img-size {
 	max-height: 350px;
@@ -145,6 +143,10 @@ a {
     -ms-transition: all .2s linear;
     -o-transition:  all .2s linear;
     transition: all .2s linear;
+}
+
+nav a {
+	color: white;
 }
 .clear {
     clear: both;
@@ -479,7 +481,7 @@ footer .bar-wrap {
 	
 	.rt-aln {
 		font-size: .7em;
-		margin-right: -20%;
+		margin-right: -15%;
 	}
 }
 
@@ -508,4 +510,8 @@ footer .bar-wrap {
 
 	/* okqll edit */
 	border-radius: 10% 50% 50% 10%;
+}
+
+.bg-pale-red {
+	background: #FF5E45;
 }
