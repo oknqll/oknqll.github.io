@@ -89,27 +89,27 @@
 	z-index: 1;
 }
 
-.bracket-portfolio {
+.bracket-portfolio-top {
 	font-family: Lato, sans-serif;
 	font-weight: 700;
 	transform: rotate(90deg); 
 	text-align: center; 
 	font-size: 1500%;
-	margin-left: 32px;
+	margin-left: 35px;
 	margin-top: -100px;
 	margin-left: 
 	z-index: -1;
 }
 
-.bracket-lifeline {
+.bracket-portfolio-bottom {
 	font-family: Lato, sans-serif;
 	font-weight: 700;
 	transform: rotate(-90deg); 
 	text-align: center; 
 	font-size: 1500%;
-	margin-left: -42px;
-	margin-top: -140px;
-	z-index: -1;
+	margin-left: -35px;
+	margin-top: -150px;
+	z-index: 0;
 }
 
 /* Place the container to the left */
