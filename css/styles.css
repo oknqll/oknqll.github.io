@@ -42,7 +42,7 @@ body {
 		/* oknqll edit */
 	font-family: Lato, sans-serif;
 	font-weight: 900;
-	margin-top: 1.5em;
+	margin-top: 1em;
     z-index: 1;
     width: 100%;
     height: 100%;
@@ -108,15 +108,7 @@ body {
     top: 130%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
-}
-
-.rt-aln {
-	position: absolute;
-    top: 69%;
-    right: 43.5%;
-    margin-right: -39.5%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
 
@@ -350,9 +342,7 @@ footer .bar-wrap {
 =======================================*/
 
 @media screen and (max-width: 1199px){
-	.rt-aln {
-		right: 39%;
-	}
+	
 }
 
 @media screen and (max-width: 1029px) {
@@ -360,18 +350,9 @@ footer .bar-wrap {
 		height: 36.7em;
 	}
 	
-	.display-3.name {
-		font-size: 3em;
-		margin-top: .7em;
-	}
-	
-	.sub-name {
-		font-size: .8em;
-	}
-	
-	.rt-aln {
-		font-size: .8em;
-		right: 42%;
+	.name {
+
+		margin-top: -.25em;
 	}
 	
 	.code-pic {
@@ -381,24 +362,21 @@ footer .bar-wrap {
 
 /* responsive rules */
 @media screen and (max-width: 1000px){
-	.rt-aln {
-		right: 39.5%;
-	}
 	
-    .links, .social, .copyright{
-        float:none;
-        text-align:center;
+    .links, .social, .copyright {
+        float: none;
+        text-align: center;
     }
     .social {
-        position:sticky;
-        margin:10px 0;
+        position: sticky;
+        margin: 10px 0;
     }
     .links li {
-        display:inline-block;
-        float:none;
+        display: inline-block;
+        float: none;
     }
     .bar {
-        position:sticky;
+        position: sticky;
     }
     .bar-wrap {
         margin-bottom: 0;
@@ -406,12 +384,13 @@ footer .bar-wrap {
 }
 
 @media screen and (max-width: 991) {
-	.logo-g-dot {
-		height: 40px;
+	
+	.name {
+		margin-top: 0em;
 	}
 	
-	.rt-aln {
-		right: 30%;
+	.logo-g-dot {
+		height: 40px;
 	}
 	
 	.code-pic {
@@ -421,6 +400,7 @@ footer .bar-wrap {
 }
 
 @media screen and (max-width: 835px)  {
+	
 	#home {
 		margin-top: 0em;
 	}
@@ -436,27 +416,27 @@ footer .bar-wrap {
 }
 
 @media screen and (max-width: 768px)  {
+	
 	#home {
 		height: 31.5em;
 	}
 	
 	.name {
 		text-align: center;
+		margin-top: -1.5em;
 	}
 	
 	.sub-name {
 	text-align: center;
 	color: #fff;
-}
-	
-	.rt-aln {
-		align-items: center;
-		margin-right: -7%;
-		transform: translate(0%, -50%)
 	}
 	
 	.code-pic {
 		background-size: 850px;
+	}
+	
+	.btn-align {
+		margin-right: 11em;
 	}
 	
 	.links li {
@@ -469,43 +449,42 @@ footer .bar-wrap {
 		height: 26em;
 	}
 	
-	.display-3.name {
+	.name {
 		margin-top: -1.5em;
 	}
 	
 	.sub-name {
-		margin-top: -4em;
+		margin-top: 0em;
 		text-align: center;
 		color: #fff;
 	}
 	
-	.rt-aln {
-		margin-right: -10%;
-	}
-	
 	.display-3.name {
-		line-height: 3em;
+		font-size: 2em;
+		line-height: 1em;
 		top: 1em;
 	}
+	
 	.code-pic {
+		background-size: 700px;
 		background-size: 700px;
 	}
 }
 
 @media screen and (max-width: 360px) {
-	.display-3.name {
-		font-size: 2em;
-		line-height: 4em;
+	.display-3. name {
+		
+		line-height: 1em;
 		top: 2.6em;
+	}
+	
+	.btn-align {
+		font-size: 2em;
+		margin-right: 2.5em;
 	}
 	
 	.sub-name {
 		font-size: .7em;
-	}
-	
-	.rt-aln {
-		font-size: .7em;
-		margin-right: -15%;
 	}
 }
 
